@@ -1,31 +1,22 @@
-# PsMsalAngular
+## PS MSAL Angular application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-## Development server
+#### OpenID in Signle page WEB application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This application try to demonstarte the usage of Microsoft Authentication Library for Angular. Which helps to create single page WEB application with OpenID based security. 
 
-## Code scaffolding
+* [msal-browser](https://www.npmjs.com/package/@azure/msal-browser)
+Microsoft Authentication Library for JavaScript (MSAL.js) for Browser-Based Single-Page Applications
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* [msal-angular](https://www.npmjs.com/package/@azure/msal-angular)
+Microsoft Authentication Library for Angular
 
-## Build
+The application gather Access Token from the authorization server during the login, and using this token to request a 'Welcome message' from two resource servers, which secured with the mentioned authozization server. These services run with "Free F1 Service Plan", so sometimes they are not available, or takes long time to start (at the first hit).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* https://ps-servlet-api.azurewebsites.net
+* https://ps-reactive-api.azurewebsites.net 
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
+Detils about these services [here](https://github.com/aperger/service-template).
 
 ## Angular minor upgrade!
 
